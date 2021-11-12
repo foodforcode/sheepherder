@@ -7,5 +7,11 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgresql://root:null@localhost:5432/shepherd"
+  url      = env("DATABASE_URL")
+}
+
+model Application {
+  id Int @id @default(autoincrement())
+  name String
+  fields Json
 }

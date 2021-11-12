@@ -41,6 +41,7 @@
     "webpack-cli": "^4.9.1"
   },
   "dependencies": {
+    "@prisma/client": "^3.4.2",
     "axios": "^0.24.0",
     "nodemon": "^2.0.15",
     "react": "^17.0.2",
