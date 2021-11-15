@@ -1,6 +1,7 @@
 export const forms = [
   {
     name: "Company application",
+    id: 1,
     fields: [
       {
         component: "section",
@@ -85,6 +86,7 @@ export const forms = [
   },
   {
     name: "Employee application",
+    id: 2,
     fields: [
       {
         name: "applicant_name",
@@ -110,6 +112,7 @@ export const forms = [
   },
   {
     name: "Auto application",
+    id: 3,
     fields: [
       {
         name: "vin",
