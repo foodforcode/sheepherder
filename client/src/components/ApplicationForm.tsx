@@ -1,11 +1,18 @@
 import React, { useEffect, useState } from "react";
-import { FormFields, Validation, FormOption } from "../types";
+import { FormFields, Validation, FormOption } from "../../../utils/types";
 import { FormField } from "./FormField";
+import axios from "axios";
 
 export const ApplicationForm = ({ name, id, fields }: FormOption) => {
+  const [values, setValues] = useState({});
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("submit", event.target);
+    axios.post("/form", {
+      params: {
+        values: values,
+        id: "selected",
+      },
+    });
   };
   return (
     <form onSubmit={handleSubmit}>

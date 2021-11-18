@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { FormFields, Validation } from "../types";
+import { FormFields, Validation } from "../../../utils/types";
 
 export const FormField = ({
   name,
@@ -25,6 +25,7 @@ export const FormField = ({
             name={name}
             type={component}
             required={validate ? true : null}
+            value={""}
           ></input>
         </div>
       )}
