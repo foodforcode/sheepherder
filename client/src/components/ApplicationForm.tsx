@@ -10,7 +10,7 @@ export const ApplicationForm = ({ name, id, fields }: FormOption) => {
     axios.post("/form", {
       params: {
         values: values,
-        id: "selected",
+        id: id,
       },
     });
   };

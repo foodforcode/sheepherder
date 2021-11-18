@@ -30,3 +30,12 @@ export const loadForm = async (req: Request, res: Response) => {
 
   res.json(findForm);
 };
+
+export const updateForm = async (req: Request, res: Response) => {
+  const { id, values } = req.body;
+
+  const findAndUpdateForm = await prisma.application.update({
+    data: values,
+    where: { id: id },
+  });
+};

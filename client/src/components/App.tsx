@@ -1,7 +1,7 @@
 import React, { useEffect, useState, Fragment } from "react";
 import axios from "axios";
 import { ProgressPlugin } from "webpack";
-import { FormOptions, FormOption, FormFields } from "../types";
+import { FormOptions, FormOption, FormFields } from "../../../utils/types";
 import { ApplicationForm } from "./ApplicationForm";
 
 export const App = () => {
